@@ -1,0 +1,46 @@
+body {
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+}
+
+.container {
+    display: flex;
+    justify-content: space-around;
+}
+
+.pager-container {
+    max-width: 30%;
+    width: 25%;
+    background-color: #fff;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    padding: 1em;
+}
+
+.pager-container .pager {
+    color: #fff;
+    text-align: center;
+    background-color: #283033;
+    padding: 0.5em;
+}
+
+.pager, .phone-container h2 {
+    margin: 0.2em;
+}
+
+.pager .pager-message-holder {
+    background-color: #9EC4B3;
+    padding: 0.8em 0;
+}
+
+.pager-message-holder #pagerMessage {
+    font-size: 1.5rem;
+    color: #000;
+    font-weight: 600;
+}
+
+/* phone section start from here  */
+
+.phone-container {
+    text-align: center;
+    padding: 0.5em;
+}
