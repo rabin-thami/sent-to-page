@@ -1,14 +1,16 @@
 body {
     font-family: 'Poppins', sans-serif;
     box-sizing: border-box;
+    user-select: none;
 }
 
 .container {
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
+    gap: 2em;
 }
 
-.pager-container {
+.main-container {
     max-width: 30%;
     width: 25%;
     background-color: #fff;
@@ -16,14 +18,15 @@ body {
     padding: 1em;
 }
 
-.pager-container .pager {
+.pager {
     color: #fff;
     text-align: center;
     background-color: #283033;
-    padding: 0.5em;
+    padding: 0.2em;
 }
 
-.pager, .phone-container h2 {
+.pager, .phone h2 {
+    padding-top: 0.1em;
     margin: 0.2em;
 }
 
@@ -32,7 +35,7 @@ body {
     padding: 0.8em 0;
 }
 
-.pager-message-holder #pagerMessage {
+#pagerMessage, #phoneMessge {
     font-size: 1.5rem;
     color: #000;
     font-weight: 600;
@@ -40,7 +43,72 @@ body {
 
 /* phone section start from here  */
 
-.phone-container {
+.phone {
     text-align: center;
     padding: 0.5em;
+}
+
+.phone-message-holder {
+    background-color: #283033;
+    padding: 0.8em 0;
+}
+
+#phoneMessge {
+    color: #fff;
+}
+
+.phone-button {
+    margin: 0.5em;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+/* I just copy this button animation from google */
+.key-button{
+    margin:0.5em;
+    padding: 0.7em 2.1em;
+    border: none;
+    font-size: 1.2rem;
+    font-weight: 600;
+    background-color: #F8F8F8;
+    border: 1px solid #ccc;
+    position: relative;
+    overflow: hidden;
+    transition: transform 0.1s, box-shadow 0.1s;
+}
+  
+.key-button:active {
+    transform: translateY(2px);
+}
+
+.key-button:hover {
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1);
+}
+
+.submit-reset {
+    display: flex;
+    flex-direction: column;
+}
+
+.btn {
+    padding: 1em;
+    margin: 0.5em;
+    border: none;
+    font: 1.3rem;
+    font-weight: 600;
+    transition: 0.3s;
+}
+
+.btn:hover {
+    color: #fff;
+    cursor: pointer;
+}
+
+.reset {
+    background-color: #BE482A;
+}
+
+.submit {
+    background-color: #3D9C7C;
 }
