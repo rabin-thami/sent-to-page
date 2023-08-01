@@ -33,8 +33,14 @@ body {
 .pager .pager-message-holder {
     background-color: #9EC4B3;
     padding: 0.8em 0;
+    overflow-x: scroll;
+    overflow-y: hidden;
+    white-space: nowrap;
 }
 
+.pager-message-holder::-webkit-scrollbar {
+    display: none;
+}
 
 #pagerMessage, #phoneMessge {
     content: '';
@@ -55,6 +61,14 @@ body {
 .phone-message-holder {
     background-color: #283033;
     padding: 0.8em 0;
+    overflow-x: scroll;
+    overflow-y: hidden;
+    white-space: nowrap;
+}
+
+
+.phone-message-holder::-webkit-scrollbar {
+    display: none;
 }
 
 #phoneMessge {
